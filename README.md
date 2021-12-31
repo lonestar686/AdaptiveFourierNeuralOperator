@@ -1,6 +1,6 @@
 # Adaptive Fourier Neural Operators: Efficient Token Mixers for Transformers
 
-This repository contains PyTorch implementation of the Adaptive Fourier Neural Operator token mixer. Classification code is also provided i the `classification` folder.
+This repository contains PyTorch implementation of the Adaptive Fourier Neural Operator token mixer. Classification code is also provided in the `classification` folder.
 
 The Adaptive Fourier Neural Operator is a token mixer that learns to mix in the Fourier domain. AFNO is based on a principled foundation of operator learning which allows us to frame token mixing as a continuous global convolution without any dependence on the input resolution. This principle was previously used to design FNO, which solves global convolution efficiently in the Fourier domain and has shown promise in learning challenging PDEs. To handle challenges in visual representation learning such as discontinuities in images and high resolution inputs, we propose principled architectural modifications to FNO which results in memory and computational efficiency. This includes imposing a block-diagonal structure on the channel mixing weights, adaptively sharing weights across tokens, and sparsifying the frequency modes via soft-thresholding and shrinkage. The resulting model is highly parallel with a quasi-linear complexity and has linear memory in the sequence size.
 

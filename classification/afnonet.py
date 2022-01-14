@@ -14,7 +14,7 @@ from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 import torch.fft
 from torch.nn.modules.container import Sequential
-from main_gfnet import get_args
+from main_afnonet import get_args
 from torch.utils.checkpoint import checkpoint_sequential
 
 from einops import rearrange, repeat

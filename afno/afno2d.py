@@ -1,3 +1,5 @@
+# Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
 import math
 import torch
 import torch.fft

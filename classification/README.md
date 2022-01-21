@@ -45,7 +45,7 @@ _Note_: To use the `rfft2` and `irfft2` functions in PyTorch, you need to instal
 To train AFNONet models on ImageNet from scratch, run:
 
 ```
-python -m torch.distributed.launch --nproc_per_node=8 --use_env main_afnonet.py --arch gfnet-xs --batch-size 128 --data-path /path/to/ILSVRC2012/
+python -m torch.distributed.launch --nproc_per_node=8 --use_env main_afnonet.py --batch-size 128 --data-path /path/to/ILSVRC2012/ --hidden-size 256 --num-layers 12 --fno-blocks 4
 ```
 
 ## License
